@@ -4,36 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meteo-App</title>
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <header>
-      <form>
-        <input type="text" placeholder="Enter a city.." requiered />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>Vienna</h1>
-        <p>
-          Tuesday 14:09, overcast clouds
-          <br />
-          Humidity: 73%, Wind: 7.15km/h
-        </p>
-      </div>
-      <div>😶‍🌫️ 12°C</div>
-    </main>
-    <footer>
-      This project was coded by Sofija Krulj and is on
-      <a href="https://github.com/Sofija-Krj/Meteo-App" target="blank"
-        >GitHub</a
-      >
-      hosted on
-      <a
-        href="https://app.netlify.com/teams/sofija-krj-55fthvg/overview"
-        target="blank"
-        >Netlify</a
-      >
-    </footer>
+    <div class="background">
+      <header>
+        <form class="form-style">
+          <input
+            type="text"
+            placeholder="Enter a city.."
+            class="form-input"
+            requiered
+          />
+          <input type="submit" value="Search" class="submit-form" />
+        </form>
+      </header>
+      <main>
+        <div>
+          <h1>Vienna</h1>
+          <p>
+            Tuesday 14:09, overcast clouds
+            <br />
+            Humidity: 73%, Wind: 7.15km/h
+          </p>
+        </div>
+        <div>😶‍🌫️ 12°C</div>
+      </main>
+      <footer>
+        This project was coded by Sofija Krulj and is on
+        <a href="https://github.com/Sofija-Krj/Meteo-App" target="blank"
+          >GitHub</a
+        >
+        hosted on
+        <a
+          href="https://app.netlify.com/teams/sofija-krj-55fthvg/overview"
+          target="blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
