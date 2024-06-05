@@ -4,6 +4,10 @@ body {
   a {
     color: #885df1;
   }
+
+  h1 {
+    margin-top: 60px;
+  }
 }
 footer {
   border-top: 1px solid #f9f7fe;
@@ -36,4 +40,7 @@ footer {
   margin-left: 5px;
   border-radius: 6px;
   color: white;
+}
+.weather-details {
+  font-size: 22px;
 }
