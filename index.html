@@ -19,18 +19,22 @@
           <input type="submit" value="Search" class="submit-form" />
         </form>
       </header>
-
-      <hr class="section-line/>
-      <main class="weather-details">
+      <hr class="section-line" />
+      <main class="main-content">
         <div>
           <h1>Vienna</h1>
-          <p>
+          <p class="weather-details">
             Tuesday 14:09, overcast clouds
             <br />
-            Humidity: 73%, Wind: 7.15km/h
+            Humidity:<span class="humidity-emphasis">73%</span>, Wind:
+            <span class="wind-strenght"> 7.15km/h </span>
           </p>
         </div>
-        <div>😶‍🌫️ 12°C</div>
+        <div class="temperature-wrap">
+          <div class="weather-emoji">😶‍🌫️</div>
+          <div class="temperature">12</div>
+          <div class="metric">°C</div>
+        </div>
       </main>
       <footer>
         This project was coded by
