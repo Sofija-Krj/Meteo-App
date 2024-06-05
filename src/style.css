@@ -4,7 +4,25 @@ body {
 
 .background {
   background-color: white;
-  max-width: 50%;
+  max-width: 600px;
   margin: 20px auto;
   padding: 30px;
+}
+
+.form-input {
+  background-color: #f9f7fe;
+  border: none;
+  border-radius: 6px;
+  width: 70%;
+  font-size: 16px;
+  padding: 15px 20px;
+}
+.submit-form {
+  background: #885df1;
+  padding: 15px 30px;
+  border: none;
+  font-size: 16px;
+  margin-left: 5px;
+  border-radius: 6px;
+  color: white;
 }
