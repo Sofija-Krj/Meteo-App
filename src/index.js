@@ -5,5 +5,5 @@ function changeCityName(event) {
   heading.innerHTML = cityInput.value;
 }
 
-let cityName = document.querySelector("#form-input-value");
+let cityName = document.querySelector("#form-input");
 cityName.addEventListener("submit", changeCityName);
