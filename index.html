@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meteo-App</title>
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="background">
@@ -33,7 +34,7 @@
         </div>
         <div class="temperature-wrap">
           <div class="weather-emoji">😶‍🌫️</div>
-          <div class="temperature">12</div>
+          <div class="temperature" id="temperature-digit">12</div>
           <div class="metric">°C</div>
         </div>
       </main>
