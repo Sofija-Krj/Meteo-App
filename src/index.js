@@ -19,7 +19,7 @@ function displayTemperature(response) {
   let temperature = document.querySelector("#temperature-digit");
   let currentTemperature = Math.round(response.data.temperature.current);
   temperature.innerHTML = currentTemperature;
-  let cityElement = document.querySelector("h1");
+  let cityElement = document.querySelector("#heading");
   cityElement.innerHTML = response.data.city;
   let descriptionElement = document.querySelector(".weather-condition");
   descriptionElement.innerHTML = response.data.condition.description;
