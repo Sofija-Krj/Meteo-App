@@ -15,6 +15,9 @@ function displayTemperature(response) {
   temperature.innerHTML = currentTemperature;
   let cityElement = document.querySelector("h1");
   cityElement.innerHTML = response.data.city;
+  let descriptionElement = document.querySelector(".weather-condition");
+
+  descriptionElement.innerHTML = response.data.condition.description;
 }
 
 function search(city) {
