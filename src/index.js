@@ -2,7 +2,13 @@ function changeCityName(event) {
   event.preventDefault();
   let heading = document.querySelector("h1");
   let cityInput = document.querySelector("#form-input-value");
-  heading.innerHTML = cityInput.value;
+  if (cityInput.value) {
+    heading.innerHTML = cityInput.value;
+  } else {
+    heading.innerHTML = null;
+    alert("Enter a city..");
+  }
+
   search(cityInput.value);
 }
 
@@ -16,8 +22,11 @@ function displayTemperature(response) {
   let cityElement = document.querySelector("h1");
   cityElement.innerHTML = response.data.city;
   let descriptionElement = document.querySelector(".weather-condition");
-
   descriptionElement.innerHTML = response.data.condition.description;
+  let humidityElement = document.querySelector("#humidity-percentage");
+  humidityElement.innerHTML = `${response.data.temperature.humidity} %`;
+  let speedElement = document.querySelector("#wind-speed");
+  speedElement.innerHTML = `${response.data.wind.speed} km/h`;
 }
 
 function search(city) {
