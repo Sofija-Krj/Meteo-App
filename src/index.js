@@ -26,7 +26,7 @@ function displayTemperature(response) {
   let humidityElement = document.querySelector("#humidity-percentage");
   humidityElement.innerHTML = `Humidity: ${response.data.temperature.humidity} %`;
   let speedElement = document.querySelector("#wind-speed");
-  speedElement.innerHTML = `Wind: ${response.data.wind.speed} km/h`;
+  speedElement.innerHTML = `Wind:${response.data.wind.speed} km/h`;
   let date = new Date(response.data.time * 1000);
   let timeElement = document.querySelector("#automated-time");
   timeElement.innerHTML = actualTime(date);
