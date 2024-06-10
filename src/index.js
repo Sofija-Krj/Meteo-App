@@ -24,9 +24,26 @@ function displayTemperature(response) {
   let descriptionElement = document.querySelector(".weather-condition");
   descriptionElement.innerHTML = response.data.condition.description;
   let humidityElement = document.querySelector("#humidity-percentage");
-  humidityElement.innerHTML = `${response.data.temperature.humidity} %`;
+  humidityElement.innerHTML = `Humidity: ${response.data.temperature.humidity} %`;
   let speedElement = document.querySelector("#wind-speed");
-  speedElement.innerHTML = `${response.data.wind.speed} km/h`;
+  speedElement.innerHTML = `Wind: ${response.data.wind.speed} km/h`;
+  let date = new Date(response.data.time * 1000);
+  let timeElement = document.querySelector("#automated-time");
+  timeElement.innerHTML = actualTime(date);
+}
+function actualTime(date) {
+  let hour = date.getHours();
+  let minutes = date.getMinutes();
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+  let day = days[date.getDay()];
+
+  if (minutes < 10) {
+    minutes === `0${minutes}`;
+  }
+  if (hour < 10) {
+    hour === `0${hour}`;
+  }
+  return `${day} ${hour}:${minutes},`;
 }
 
 function search(city) {
