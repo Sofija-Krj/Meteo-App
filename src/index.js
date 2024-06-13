@@ -18,7 +18,7 @@ cityName.addEventListener("submit", changeCityName);
 function displayTemperature(response) {
   let temperature = document.querySelector("#temperature-digit");
   let currentTemperature = Math.round(response.data.temperature.current);
-  temperature.innerHTML = currentTemperature;
+  temperature.innerHTML = `${currentTemperature}`;
 
   let cityElement = document.querySelector("#heading");
   cityElement.innerHTML = response.data.city;

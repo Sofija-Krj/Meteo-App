@@ -80,5 +80,9 @@ footer {
 
 .metric {
   margin-top: 16px;
-  font-size: 28px;
+  font-size: 35px;
+}
+.celsius {
+  font-size: 25px;
+  margin-top: 8%;
 }
