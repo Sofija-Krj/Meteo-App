@@ -18,8 +18,8 @@ cityName.addEventListener("submit", changeCityName);
 function displayTemperature(response) {
   let temperature = document.querySelector("#temperature-digit");
   let currentTemperature = Math.round(response.data.temperature.current);
-
   temperature.innerHTML = currentTemperature;
+
   let cityElement = document.querySelector("#heading");
   cityElement.innerHTML = response.data.city;
   let descriptionElement = document.querySelector(".weather-condition");
@@ -32,6 +32,7 @@ function displayTemperature(response) {
   let timeElement = document.querySelector("#automated-time");
   timeElement.innerHTML = actualTime(date);
 }
+
 function actualTime(date) {
   let hour = date.getHours();
   let minutes = date.getMinutes();
