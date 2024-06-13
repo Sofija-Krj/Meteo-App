@@ -19,7 +19,6 @@ function displayTemperature(response) {
   let temperature = document.querySelector("#temperature-digit");
   let currentTemperature = Math.round(response.data.temperature.current);
   temperature.innerHTML = `${currentTemperature}`;
-
   let cityElement = document.querySelector("#heading");
   cityElement.innerHTML = response.data.city;
   let descriptionElement = document.querySelector(".weather-condition");
@@ -31,6 +30,8 @@ function displayTemperature(response) {
   let date = new Date(response.data.time * 1000);
   let timeElement = document.querySelector("#automated-time");
   timeElement.innerHTML = actualTime(date);
+  let weatherEmoji = document.querySelector(".weather-emoji");
+  weatherEmoji.innerHTML = `<img src=${response.data.condition.icon_url} class="emoji-design-details"/>`;
 }
 
 function actualTime(date) {
