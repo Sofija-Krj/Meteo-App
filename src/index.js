@@ -48,6 +48,23 @@ function actualTime(date) {
   }
   return `${day} ${hour}:${minutes},`;
 }
+function displayForecast() {
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecast =
+      forecast +
+      `        <div class="temperature-wrap">
+          <div class="weather-emoji">😶‍🌫️</div>
+          <div class="temperature" id="temperature-digit"></div>
+          <div class="metric"> ° </div> <div class="celsius"> C 
+</div>`;
+  });
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
+displayForecast();
 
 function search(city) {
   let apiKey = "o3cf1124f7350046738b1c34ad3dt312";

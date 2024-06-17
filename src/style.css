@@ -85,9 +85,9 @@ footer {
 }
 .temperature-wrap {
   display: flex;
-  justify-content: center;
+  justify-content: right;
   position: relative;
-  margin: 7% 0 0 20%;
+  margin: 7% 0 0 170%;
 }
 .weather-emoji {
   font-size: 60px;
@@ -96,8 +96,9 @@ footer {
 
 .temperature {
   font-size: 88px;
-  margin-left: 10px;
+  margin-left: 1000px;
   font-weight: bold;
+  margin-left: 85%;
 }
 
 .metric {
@@ -111,4 +112,5 @@ footer {
 .emoji-design-details {
   width: 88px;
   height: 88px;
+  margin-left: 15%;
 }
