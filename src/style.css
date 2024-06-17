@@ -57,35 +57,13 @@ footer {
 .humidity-emphasis {
   color: #f65282;
 }
-.wind-strenght {
+.wind-strength {
   color: #f65282;
 }
 
-.forcast-day {
-  text-align: left;
-  color: rgba(39, 33, 66, 0.4);
-  font-size: 16px;
-  line-height: 20px;
-  margin-left: 38px;
-  margin-bottom: -20px;
-  margin-top: 30px;
-}
-
-.forcast-temperatures {
-  font-size: 16px;
-  line-height: 20px;
-  margin-left: 25px;
-}
-.forcast-temperature-max {
-  color: #f65282;
-}
-.forcast-temperature-min {
-  color: #f65282;
-  opacity: 0.8;
-}
 .temperature-wrap {
   display: flex;
-  justify-content: center;
+  justify-content: right;
   position: relative;
   margin: 7% 0 0 20%;
 }
