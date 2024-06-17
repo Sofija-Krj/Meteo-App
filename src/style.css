@@ -61,9 +61,31 @@ footer {
   color: #f65282;
 }
 
+.forecast-day {
+  text-align: left;
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  line-height: 20px;
+  margin-left: 38px;
+  margin-bottom: -20px;
+  margin-top: 30px;
+}
+
+.forecast-temperatures {
+  font-size: 16px;
+  line-height: 20px;
+  margin-left: 25px;
+}
+.forecast-temperature-max {
+  color: #f65282;
+}
+.forecast-temperature-min {
+  color: #f65282;
+  opacity: 0.8;
+}
 .temperature-wrap {
   display: flex;
-  justify-content: right;
+  justify-content: center;
   position: relative;
   margin: 7% 0 0 20%;
 }
