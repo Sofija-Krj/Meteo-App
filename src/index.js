@@ -59,8 +59,8 @@ function displayForecast() {
   <div>${day}</div>
   <div class="weather-emoji">😶‍🌫️</div>
   <div class="temperature" id="temperature-digit">
-    <div class="metric"> °C </div>
-  
+    <div class="metric"> ° </div>
+    <div class="celsius">C</div>
   </div>
 </div>`;
   });
