@@ -53,12 +53,15 @@ function displayForecast() {
   let forecastHtml = "";
 
   days.forEach(function (day) {
-    forecast =
-      forecast +
+    forecastHtml =
+      forecastHtml +
       `        <div class="temperature-wrap">
-          <div class="weather-emoji">😶‍🌫️</div>
-          <div class="temperature" id="temperature-digit"></div>
-          <div class="metric"> ° </div> <div class="celsius"> C 
+  <div>${day}</div>
+  <div class="weather-emoji">😶‍🌫️</div>
+  <div class="temperature" id="temperature-digit">
+    <div class="metric"> °C </div>
+  
+  </div>
 </div>`;
   });
   let forecastElement = document.querySelector("#forecast");

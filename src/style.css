@@ -83,22 +83,14 @@ footer {
   color: #f65282;
   opacity: 0.8;
 }
-.temperature-wrap {
-  display: flex;
-  justify-content: right;
-  position: relative;
-  margin: 7% 0 0 170%;
-}
 .weather-emoji {
   font-size: 60px;
   margin-top: 7px;
 }
 
 .temperature {
-  font-size: 88px;
-  margin-left: 1000px;
+  font-size: 12px;
   font-weight: bold;
-  margin-left: 85%;
 }
 
 .metric {
@@ -113,4 +105,9 @@ footer {
   width: 88px;
   height: 88px;
   margin-left: 15%;
+}
+
+#forecast {
+  display: flex;
+  justify-content: space-between;
 }

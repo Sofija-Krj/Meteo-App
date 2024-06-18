@@ -1,61 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meteo-App</title>
-    <link rel="stylesheet" href="src/style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
-  </head>
-  <body>
-    <div class="background">
-      <header>
-        <form class="form-style" id="form-input">
-          <input
-            type="text"
-            placeholder="Enter a city.."
-            class="form-input"
-            id="form-input-value"
-            requiered
-          />
-          <input type="submit" value="Search" class="submit-form" />
-        </form>
-      </header>
-      <hr class="section-line" />
-      <main class="main-content">
-        <div>
-          <h1 id="heading">Nowhereland Weather App</h1>
-          
-          <p class="weather-details">
-           <span class="change-date" id="automated-time"></span> <span class="weather-condition"></span> 
 
-            <br /> </p>
-          <p>
-            <span class="humidity-emphasis" id="humidity-percentage"></span> 
-            
-            <span class="wind-strength" id="wind-speed"></span>
-          </p>
-   
-        </div>
-        <div class="weather-forecast" id="forecast"> </div>
-        </div>
-        
-      </main>
-      <footer>
-        This project was coded by
-        <a href="https://new-meteo-app.netlify.app/"> Sofija Krulj </a> and is
-        on
-        <a href="https://github.com/Sofija-Krj/Meteo-App" target="blank"
-          >GitHub</a
-        >
-        hosted on
-        <a
-          href="https://app.netlify.com/teams/sofija-krj-55fthvg/overview"
-          target="blank"
-          >Netlify</a
-        >
-      </footer>
-    </div>
-    <script src="src/index.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meteo-App</title>
+  <link rel="stylesheet" href="src/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <div class="background">
+    <header>
+      <form class="form-style" id="form-input">
+        <input type="text" placeholder="Enter a city.." class="form-input" id="form-input-value" requiered />
+        <input type="submit" value="Search" class="submit-form" />
+      </form>
+    </header>
+    <hr class="section-line" />
+    <main class="main-content">
+      <div>
+        <h1 id="heading">Nowhereland Weather App</h1>
+
+        <p class="weather-details">
+          <span class="change-date" id="automated-time"></span> 
+          <span class="weather-condition"></span>
+          <span id="temperature-digit"></span>
+          <br />
+        </p>
+        <div class="temperature-digit"></div>
+        <p>
+          <span class="humidity-emphasis" id="humidity-percentage"></span>
+
+          <span class="wind-strength" id="wind-speed"></span>
+        </p>
+
+      </div>
+      <div class="weather-emoji"> </div>
+    </main>
+    <div id="forecast"></div>
+  </div>
+
+  <footer>
+    This project was coded by
+    <a href="https://new-meteo-app.netlify.app/"> Sofija Krulj </a> and is
+    on
+    <a href="https://github.com/Sofija-Krj/Meteo-App" target="blank">GitHub</a>
+    hosted on
+    <a href="https://app.netlify.com/teams/sofija-krj-55fthvg/overview" target="blank">Netlify</a>
+  </footer>
+  </div>
+  <script src="src/index.js"></script>
+</body>
+
 </html>
