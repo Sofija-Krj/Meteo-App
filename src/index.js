@@ -18,7 +18,7 @@ cityName.addEventListener("submit", changeCityName);
 function displayTemperature(response) {
   let temperature = document.querySelector("#temperature-digit");
   let currentTemperature = Math.round(response.data.temperature.current);
-  temperature.innerHTML = `${currentTemperature}`;
+  temperature.innerHTML = `${currentTemperature}<span class="metric">°C</span>`;
   let cityElement = document.querySelector("#heading");
   cityElement.innerHTML = response.data.city;
   let descriptionElement = document.querySelector(".weather-condition");
@@ -55,7 +55,7 @@ function displayForecast() {
   days.forEach(function (day) {
     forecastHtml =
       forecastHtml +
-      `        <div class="temperature-wrap">
+      `        <div>
   <div>${day}</div>
   <div class="weather-emoji">😶‍🌫️</div>
   <div class="temperature" id="temperature-digit">
