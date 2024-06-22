@@ -12,6 +12,11 @@ function changeCityName(event) {
   search(cityInput.value);
 }
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  return days[date.getDay()];
+}
 let cityName = document.querySelector("#form-input");
 cityName.addEventListener("submit", changeCityName);
 
@@ -48,21 +53,23 @@ function actualTime(date) {
   }
   return `${day} ${hour}:${minutes},`;
 }
-function displayForecast() {
-  let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+function displayForecast(response) {
   let forecastHtml = "";
 
-  days.forEach(function (day) {
-    forecastHtml =
-      forecastHtml +
-      `        <div>
-  <div>${day}</div>
-  <div class="weather-emoji">😶‍🌫️</div>
-  <div class="temperature" id="temperature-digit">
-    <div class="metric"> ° </div>
+  response.data.daily.forEach(function (day, index) {
+    if (index < 5) {
+      forecastHtml =
+        forecastHtml +
+        `        <div>
+ </div>
+  <div class="weather-emoji"> <img src=${day.condition.icon_url}"/> </div>
+  <div class="temperature" id="temperature-digit"> ${formatDay(day.time)}</div>
+  
+      <div class="metric">${daily.temperaure.minimum}</div>
     <div class="celsius">C</div>
   </div>
 </div>`;
+    }
   });
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
