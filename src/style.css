@@ -95,13 +95,10 @@ footer {
 }
 
 .metric {
-  margin-top: 16px;
-  font-size: 35px;
+  text-align: center;
+  color: #f65282;
 }
-.celsius {
-  font-size: 25px;
-  margin-top: 8%;
-}
+
 .emoji-design-details {
   width: 80px;
   height: 80px;
